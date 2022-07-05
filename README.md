@@ -8,3 +8,10 @@
 6. Stwórz formularz dodawania żartu a także możliwość jego usuwania.
 7. Aby przetrzymać tokeny po stronie aplikacji użyj `AsyncStorage`
 8. Użytkownik musi mieć możliwość skutecznego wylogowania się. Upewnij się, że wylogowując użytkownika usuwasz jego tokeny.
+
+['Bären', 'küssen', 'Käfer', 'Ähnlich', 'Äpfel'].sort(function (a, b) {
+    return a.localeCompare(b);
+});
+
+// This sorts as:
+// ["Ähnlich", "Äpfel", "Bären", "Käfer", "küssen"]

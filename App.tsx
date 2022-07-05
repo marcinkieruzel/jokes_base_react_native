@@ -3,17 +3,19 @@ import { NavigationContainer } from "@react-navigation/native";
 import { createStackNavigator } from "@react-navigation/stack";
 import { StyleSheet, Text, Button, View } from "react-native";
 import Home from "./routes/Home";
+import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
+import Register from './routes/Register'
 
-const Stack = createStackNavigator();
+// const Stack = createStackNavigator();
+const Tab = createBottomTabNavigator();
 
 export default function App() {
   return (
     <NavigationContainer>
-      <View>
-        <Stack.Navigator>
-          <Stack.Screen name={"Home"} component={Home} />
-        </Stack.Navigator>
-      </View>
+      <Tab.Navigator>
+        <Tab.Screen name={"Home"} component={Home} />
+        <Tab.Screen name={"Register"} component={Register} />
+      </Tab.Navigator>
     </NavigationContainer>
   );
 }
