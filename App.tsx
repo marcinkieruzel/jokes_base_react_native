@@ -5,6 +5,7 @@ import { StyleSheet, Text, Button, View } from "react-native";
 import Home from "./routes/Home";
 import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Register from './routes/Register'
+import Login from './routes/Login'
 
 // const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
@@ -15,6 +16,7 @@ export default function App() {
       <Tab.Navigator>
         <Tab.Screen name={"Home"} component={Home} />
         <Tab.Screen name={"Register"} component={Register} />
+        <Tab.Screen name={"Login"} component={Login} />
       </Tab.Navigator>
     </NavigationContainer>
   );
