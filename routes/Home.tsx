@@ -3,7 +3,7 @@ import { View, Text } from "react-native";
 
 type Props = {};
 
-const Home: React.FC<Props> = ({}): JSX.Element => {
+const Home: React.FC = (): JSX.Element => {
   return (
     <View>
       <Text>Home</Text>
